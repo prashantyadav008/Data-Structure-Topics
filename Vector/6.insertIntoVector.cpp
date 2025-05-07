@@ -18,9 +18,13 @@ int main()
   v1.pop_back();
   v1.pop_back();
 
-  vector<int>::iterator it = v1.begin();
+  // insert between two value
+  v1.insert(v1.begin() + 1, 15);
 
+  // insert using iterator
+  vector<int>::iterator it = v1.begin();
   v1.insert(it + 3, 35);
+
   for (int i = 0; i < v1.size(); i++)
   {
     cout << "i: " << v1[i] << endl;
